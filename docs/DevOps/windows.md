@@ -18,34 +18,34 @@ On RUN step, or on Production environment : It's best to use portable version so
 {:toc}
 
 
-# Client (s)FTP
+# (s)FTP Client
 
 1. [WinSCP](https://winscp.net/eng/downloads.php)
 1. [FileZilla](https://filezilla-project.org/download.php?show_all=1)
 
-# Client JDBC / SQL
+# JDBC / SQL Client
 
 1. [dbeaver](https://portapps.io/app/dbeaver-portable/)
 
-# Client HTTP(s)
+# HTTP(s) Client
 
 1. Firefox
 1. Chrome
 1. Command Line Tool : [curl](https://curl.se/windows/)
 1. [Postman](https://www.postman.com/downloads/)
 
-# Client SSH
+# SSH Client
 
 1. [Putty](https://www.putty.org/)
 1. [mRemoteNG](https://mremoteng.org/download)
 1. [Tabby](https://tabby.sh/app) : Cmd + Powershell + SSh + Git Bash
 
-# Client RDP
+# RDP Client
 
 1. [mRemoteNG](https://mremoteng.org/download)
 1. MobaXterm
 
-# Client LDAP(s)
+# LDAP(s) Client
 
 1. [LDAP Browser](https://www.ldapadministrator.com/download.htm#browser) : Get the free community version
 
