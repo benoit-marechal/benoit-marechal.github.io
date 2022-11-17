@@ -58,26 +58,26 @@ telnet my.hostname.tld 443 # example
 > `nc -z -v -u $UDP_HOST $UDP_PORT`
 
 
-# (s)FTP Client
+# FTP & SFTP Client
 
-## (s)FTP parameters
+## FTP parameters
 
 ```shell
 FTP_USER=remote_username
 FTP_HOST=hostname
 ```
 
-## sFTP Testing 
+## FTP Testing 
 
 ```shell
 sftp $FTP_USER@$FTP_HOST
 ```
 
 
-# HTTP(s) Client
+# HTTP & HTTPS Client
 
 
-## HTTP(s) Parameter
+## HTTP Parameter
 
 ```shell
 HTTP_PROTOCOL=http # default http; https if secured.
@@ -166,7 +166,7 @@ dig sub.domain.com +short # example
 ```
 
 
-# LDAP Client
+# LDAP & LDAPS Client
 
 
 ## LDAP Parameters

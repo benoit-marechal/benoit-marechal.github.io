@@ -18,7 +18,7 @@ On RUN step, or on Production environment : It's best to use portable version so
 {:toc}
 
 
-# (s)FTP Client
+# FTP & SFTP Client
 
 1. [WinSCP](https://winscp.net/eng/downloads.php)
 1. [FileZilla](https://filezilla-project.org/download.php?show_all=1)
@@ -45,7 +45,7 @@ On RUN step, or on Production environment : It's best to use portable version so
 1. [mRemoteNG](https://mremoteng.org/download)
 1. MobaXterm
 
-# LDAP(s) Client
+# LDAP & LDAPS Client
 
 1. [LDAP Browser](https://www.ldapadministrator.com/download.htm#browser) : Get the free community version
 

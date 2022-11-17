@@ -18,7 +18,7 @@ Test-NetConnection -ComputerName $TCP_HOST -Port $TCP_PORT -InformationLevel "De
 ```
 
 
-## (s)FTP Client
+## FTP and SFTP Client
 
 ```powershell
 $FTP_USER=remote_username
