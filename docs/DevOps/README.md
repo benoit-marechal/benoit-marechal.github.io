@@ -1,9 +1,9 @@
 ---
 layout: default
 title: DevOps
-nav_order: 1
+nav_order: 2
 has_children: true
-permalink: docs/README
+permalink: docs/devops
 ---
 
 # DevOps

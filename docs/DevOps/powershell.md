@@ -34,7 +34,7 @@ Get-SFTPItem -SessionId $SFTPSession.SessionId -Path /home/myuser/myfile.txt -De
 > See also [WinSCP Module](https://winscp.net/eng/docs/library_powershell).
 
 
-## HTTP(s) Client
+## HTTP & HTTPS Client
 
 
 ```powershell
@@ -62,7 +62,7 @@ DNS Test : Ip resolution from Host
 
 -->
 
-## LDAP Client
+## LDAP & LDAPS Client
 
 > If you want a GUI LDAP client, get the free LDAP Browser 4.5 (not the paid administrator version). 
 
