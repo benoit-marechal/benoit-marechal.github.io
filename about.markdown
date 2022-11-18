@@ -4,15 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Je suis intégrateur et Devops à la Métropole De Lyon.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Je partage ici les informations qui me sont utile dans mon quotidien sur le devops, l'architecture du web et le numérique responsable.
 
 
-[jekyll-organization]: https://github.com/jekyll
+[Me contacter via LinkedIn](https://www.linkedin.com/in/benoitmarechal1/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+
+
+
+<!-- This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+ -->
