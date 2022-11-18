@@ -4,7 +4,12 @@ title: Linux shell Best Debug command line tools
 parent: DevOps
 ---
 
-> Linux Debug Tools For Ops and Devops
+{:refdef: style="text-align: center;"}
+<img src="/images/linux-logo.png" width="128px">
+{: refdef}
+
+
+# Linux Debug Tools For Ops and Devops
 
 
 Mainly specific client protocol to test specific server protocol, like curl to test an http server, ldapsearch for a ldap server or mail to test a SMTP relay etc.

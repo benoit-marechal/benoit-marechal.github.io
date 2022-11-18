@@ -3,8 +3,12 @@ layout: default
 title: PowerShell Debug Tools for DevOps
 parent: DevOps
 ---
+{:refdef: style="text-align: center;"}
+<img src="/images/powershell-logo.png" width="128px">
+{: refdef}
 
-PowerShell Debug Tools for Ops
+
+# PowerShell Debug Tools for Ops
 
 
 ## Client TCP

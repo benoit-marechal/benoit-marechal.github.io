@@ -4,6 +4,12 @@ title: Windows Best Debug Tools
 parent: DevOps
 ---
 
+{:refdef: style="text-align: center;"}
+<img src="/images/windows-logo.png" width="128px">
+{: refdef}
+
+# Windows Best Debug Tools
+
 This is my Top Windows App for Debuging and Troubleshooting interfaces and connections issues.
 
 
@@ -74,10 +80,10 @@ On RUN step, or on Production environment : It's best to use portable version so
 1. [AutoRun](https://docs.microsoft.com/fr-fr/sysinternals/downloads/autoruns) : Voir exhaustivement les applications lancée au démarrage Windows
 1. [GreenshotPortable](https://getgreenshot.org/version-history/)
 
-# Linux Commands on Windows
+# Linux Commands 
 
 - Bash on Windows [WSL 2](https://learn.microsoft.com/en-us/windows/wsl/install-on-server)
-- [Linux Command for Windows](http://unxutils.sourceforge.net/)
+- [Unix Utils Commands for Windows](http://unxutils.sourceforge.net/)
 - [Git Bash](https://gitforwindows.org/)
 
 # DNS 
