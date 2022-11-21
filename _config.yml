@@ -37,7 +37,7 @@ permalink: pretty
 # Build settings
 #theme: minima
 remote_theme: pmarsceill/just-the-docs
-theme: just-the-docs # BMA
+# theme: just-the-docs # BMA
 plugins:
   - jekyll-feed
 
