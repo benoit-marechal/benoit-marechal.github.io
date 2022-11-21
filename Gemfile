@@ -7,6 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
+gem "webrick" # nécessaire cf https://stackoverflow.com/questions/65617143/cannot-load-such-file-webrick-httputils
 gem "jekyll", "3.9.2"
 gem "github-pages", "~> 227", group: :jekyll_plugins
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
