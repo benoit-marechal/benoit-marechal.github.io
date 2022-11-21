@@ -16,6 +16,19 @@ https://just-the-docs.github.io/just-the-docs/docs/index-test/#header-2
 
 ## DEPLOY
 
+### Deploy To Dev (Codespaces)
+
+In Codespaces terminal : 
+```shell
+docker run --volume="$PWD:/root/project:delegated" --publish 4000:4000 -ti mrseccubus/github-pages
+```
+
+From https://hub.docker.com/r/mrseccubus/github-pages
+
+Then : 
+https://benoit-marechal-effective-pancake-46j4vr4gvq35x95-4000.preview.app.github.dev/
+
+
 ### Deploy To Production
 
 
