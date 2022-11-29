@@ -4,6 +4,8 @@ title: Linux shell Best Debug command line tools
 parent: DevOps
 ---
 
+[Edit](https://github.com/benoit-marechal/benoit-marechal.github.io/edit/main/docs/DevOps/linux.md)
+
 {:refdef: style="text-align: center;"}
 <img src="/images/linux-logo.png" width="128px">
 {: refdef}
