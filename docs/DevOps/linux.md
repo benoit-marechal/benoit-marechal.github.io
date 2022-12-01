@@ -4,6 +4,8 @@ title: Linux shell Best Debug command line tools
 parent: DevOps
 ---
 
+[Edit](https://github.com/benoit-marechal/benoit-marechal.github.io/edit/main/docs/DevOps/linux.md)
+
 {:refdef: style="text-align: center;"}
 <img src="/images/linux-logo.png" width="128px">
 {: refdef}
@@ -118,7 +120,7 @@ curl -kv https://httpbin.org/get # example
 ## DNS Parameters
 
 
-> If you don't know the following values : Ask your administrator, the SMTP manager or your integrator.
+> If you don't know the following values : Ask your administrator, the DNS manager or your integrator.
 
 DNS variables are : 
 
@@ -251,6 +253,38 @@ SMTP_SUBJECT="Test Subject"
 SMTP_BODY="Test Body"
 SMTP_RECIPIENT="recipient@domain.tld"   # Example
 # SMTP_FROM="sender@domain.tld"         # Optional
+```
+
+
+## SMTP Testing with CURL
+
+
+```shell
+cat <<EOF > mail.txt
+Content-Type: text/plain; charset=UTF-8;
+From: $SMTP_FROM
+To: $SMTP_RECIPIENT
+Subject: $SMTP_SUBJECT
+
+$SMTP_BODY
+EOF
+
+curl '$SMTP_HOST' --mail-from '$SMTP_FROM' --mail-rcpt '$SMTP_RECIPIENT' --upload-file mail.txt
+
+```
+
+With SSL use this commands line options :
+
+
+```shell
+
+curl --ssl-reqd \
+  --url 'smtps://$SMTP_HOST:SMTP_PORT' \
+  --user '$SMTP_USERNAME:SMTP_PASSWORD' \
+  --mail-from '$SMTP_USERNAME' \
+  --mail-rcpt '$SMTP_RECIPIENT' \
+  --upload-file mail.txt
+  
 ```
 
 ## SMTP Test with Mail command
