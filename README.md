@@ -18,10 +18,14 @@ https://just-the-docs.github.io/just-the-docs/docs/index-test/#header-2
 
 ### Deploy To Dev (Codespaces)
 
+
 In Codespaces terminal : 
 ```shell
+cd /workspaces/benoit-marechal.github.io/
 docker run --volume="$PWD:/root/project:delegated" --publish 4000:4000 -ti mrseccubus/github-pages
 ```
+
+> A cause du pb de racc 1.6.0, je préfère utiliser un container pour lancer l'application.
 
 From https://hub.docker.com/r/mrseccubus/github-pages
 
@@ -49,7 +53,7 @@ https://pages.github.com/versions/
 
 
 
-# DEV Environnement with CodeSpace
+# DEV Environnement WITHOUT CodeSpace
 
 
 # DIT
