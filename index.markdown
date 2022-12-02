@@ -16,7 +16,7 @@ permalink: /
 Ce site est dédié au partage d'informations sur le DevOps, l'architecture du web ou encore le numérique responsable.
 {: .fs-6 .fw-300 }
 
-[DevOps](/docs/DevOps/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/benoit-marechal/benoit-marechal.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
+[DevOps](/docs/DevOps/README.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 } [View it on GitHub](https://github.com/benoit-marechal/benoit-marechal.github.io){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 
 ---
