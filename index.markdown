@@ -14,6 +14,8 @@ permalink: /
 {: .fs-9 }
 
 
+![Logo](./images/logo-devops.png){:width="400px" .center}
+
 <center><a href="https://benoit-marechal.github.io/images/logo-devops.png" width="400px"></a></center>
 
 
