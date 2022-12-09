@@ -13,6 +13,8 @@ permalink: /
 # Accueil
 {: .fs-9 }
 
+![](./images/devops.png)
+
 Ce site est dédié au partage d'informations sur le DevOps, l'architecture du web ou encore le numérique responsable.
 {: .fs-6 .fw-300 }
 
