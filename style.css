@@ -404,3 +404,84 @@ a:focus-visible, .btn:focus-visible {
   color: var(--color-text-soft);
   margin-bottom: var(--space-1);
 }
+
+/* ============================================================
+   Responsive (mobile-first → tablette+ déjà géré au-dessus,
+   ici on ajuste pour mobile < 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  h1 { font-size: 36px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 18px; }
+
+  /* Nav : on retire les liens, on garde logo + bouton Fiche */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-inner {
+    padding: 0 var(--space-2);
+  }
+
+  /* Hero : empile verticalement, photo en haut */
+  .hero {
+    padding: var(--space-4) var(--space-2) var(--space-4);
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .hero-photo img {
+    width: 140px;
+    height: 140px;
+    border-width: 3px;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta .btn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  /* Sections : padding réduit */
+  .section {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  /* Cards : empilées */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tableaux : on permet le scroll horizontal si nécessaire */
+  .section-inner {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 100%;
+    font-size: 14px;
+  }
+
+  .table th, .table td {
+    padding: 10px 12px;
+  }
+
+  /* Tableau modules : la colonne titre prend plus, statut plus court */
+  #modules .table th:nth-child(1) { min-width: 180px; }
+
+  /* Stack/Modalités : titre des lignes en haut, contenu en bas */
+  #stack .table th, #modalites .table th {
+    width: 40%;
+  }
+}
