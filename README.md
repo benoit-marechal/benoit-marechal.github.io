@@ -1,4 +1,4 @@
-# Site formateur — Benoit Marechal
+# Site formateur — Benoit MARECHAL
 
 Site personnel professionnel hébergé sur GitHub Pages.
 
@@ -37,4 +37,4 @@ python3 -m http.server 8000
 
 ## Contact
 
-LinkedIn : <https://www.linkedin.com/in/benoit--marechal>
+LinkedIn : <https://www.linkedin.com/in/benoit-marechal-lyon>
