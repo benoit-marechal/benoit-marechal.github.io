@@ -49,7 +49,7 @@ pandoc Fiche-Formateur.md \
   --standalone \
   --embed-resources \
   --css=fiche-formateur-print.css \
-  --metadata title="Benoit MARECHAL — Fiche Formateur" \
+  --metadata pagetitle="Benoit MARECHAL — Fiche Formateur" \
   --output "$TMP_DIR/fiche.html"
 
 yellow "→ Étape 2/2 : HTML → PDF (Chrome headless)"
