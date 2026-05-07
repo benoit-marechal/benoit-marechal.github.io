@@ -1,0 +1,98 @@
+/* ============================================================
+   Site formateur — Benoit Marechal
+   Style sobre B2B institutionnel · plafond 1 j
+   ============================================================ */
+
+/* Custom properties */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f8fa;
+  --color-border: #e5e8ed;
+  --color-text: #0f1722;
+  --color-text-soft: #4a5568;
+  --color-accent: #0a2540;
+  --color-accent-hover: #163a5c;
+  --color-accent-soft: #e8eef5;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --container-width: 760px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --nav-height: 60px;
+}
+
+/* Reset minimaliste */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, li, table, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Body */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typo */
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 28px; margin-bottom: var(--space-3); }
+h3 { font-size: 20px; margin-bottom: var(--space-2); }
+
+p { margin-bottom: var(--space-2); }
+p:last-child { margin-bottom: 0; }
+
+.text-soft { color: var(--color-text-soft); }
+.note {
+  font-size: 14px;
+  color: var(--color-text-soft);
+  font-style: italic;
+  margin-top: var(--space-2);
+}
