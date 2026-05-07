@@ -1,0 +1,487 @@
+/* ============================================================
+   Site formateur — Benoit Marechal
+   Style sobre B2B institutionnel · plafond 1 j
+   ============================================================ */
+
+/* Custom properties */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f7f8fa;
+  --color-border: #e5e8ed;
+  --color-text: #0f1722;
+  --color-text-soft: #4a5568;
+  --color-accent: #0a2540;
+  --color-accent-hover: #163a5c;
+  --color-accent-soft: #e8eef5;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --container-width: 760px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --nav-height: 60px;
+}
+
+/* Reset minimaliste */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, p, ul, ol, li, table, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Body */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typo */
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 28px; margin-bottom: var(--space-3); }
+h3 { font-size: 20px; margin-bottom: var(--space-2); }
+
+p { margin-bottom: var(--space-2); }
+p:last-child { margin-bottom: 0; }
+
+.text-soft { color: var(--color-text-soft); }
+.note {
+  font-size: 14px;
+  color: var(--color-text-soft);
+  font-style: italic;
+  margin-top: var(--space-2);
+}
+
+/* ============================================================
+   Composants
+   ============================================================ */
+
+/* Nav sticky */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--nav-height);
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-accent);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.nav-links a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--color-accent);
+}
+
+/* Hero */
+.hero {
+  padding: var(--space-6) var(--space-3) var(--space-5);
+}
+
+.hero-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-headline {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-text);
+  margin: var(--space-2) 0 var(--space-1);
+}
+
+.hero-location {
+  color: var(--color-text-soft);
+  margin-bottom: var(--space-3);
+}
+
+.hero-cta {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.hero-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--color-bg-soft);
+}
+
+/* Sections */
+.section {
+  padding: var(--space-5) var(--space-3);
+}
+
+.section-soft {
+  background: var(--color-bg-soft);
+}
+
+.section-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+}
+
+.card ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.card li {
+  position: relative;
+  padding-left: var(--space-2);
+  color: var(--color-text-soft);
+}
+
+.card li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+/* Tableaux */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.table tbody tr:last-child th,
+.table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table thead th {
+  background: var(--color-bg-soft);
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table th {
+  font-weight: 700;
+  width: 35%;
+  background: var(--color-bg-soft);
+}
+
+.table-highlight {
+  background: var(--color-accent-soft);
+}
+
+.table-highlight td {
+  font-weight: 500;
+}
+
+.link-pdf {
+  font-size: 13px;
+  white-space: nowrap;
+  margin-left: var(--space-1);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 13px;
+  font-weight: 500;
+  background: var(--color-bg-soft);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text-soft);
+}
+
+.badge-ready {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.timeline li {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.timeline li:last-child {
+  border-bottom: none;
+}
+
+/* Contact */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+.contact-cta {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Boutons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 12px 20px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+
+.btn-sm {
+  padding: 8px 14px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover {
+  background: var(--color-accent-hover);
+  border-color: var(--color-accent-hover);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-secondary:hover {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+/* Focus visible */
+a:focus-visible, .btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-4) var(--space-3);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-soft);
+}
+
+.footer-inner {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: var(--color-text-soft);
+  margin-bottom: var(--space-1);
+}
+
+/* ============================================================
+   Responsive (mobile-first → tablette+ déjà géré au-dessus,
+   ici on ajuste pour mobile < 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+  h1 { font-size: 36px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 18px; }
+
+  /* Nav : on retire les liens, on garde logo + bouton Fiche */
+  .nav-links {
+    display: none;
+  }
+
+  .nav-inner {
+    padding: 0 var(--space-2);
+  }
+
+  /* Hero : empile verticalement, photo en haut */
+  .hero {
+    padding: var(--space-4) var(--space-2) var(--space-4);
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .hero-photo img {
+    width: 140px;
+    height: 140px;
+    border-width: 3px;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta .btn {
+    flex: 1;
+    justify-content: center;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  /* Sections : padding réduit */
+  .section {
+    padding: var(--space-4) var(--space-2);
+  }
+
+  /* Cards : empilées */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tableaux : on permet le scroll horizontal si nécessaire */
+  .section-inner {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 100%;
+    font-size: 14px;
+  }
+
+  .table th, .table td {
+    padding: 10px 12px;
+  }
+
+  /* Tableau modules : la colonne titre prend plus, statut plus court */
+  #modules .table th:nth-child(1) { min-width: 180px; }
+
+  /* Stack/Modalités : titre des lignes en haut, contenu en bas */
+  #stack .table th, #modalites .table th {
+    width: 40%;
+  }
+}

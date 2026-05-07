@@ -1,72 +1,57 @@
+# Site formateur — Benoit MARECHAL
 
+Site personnel professionnel hébergé sur GitHub Pages.
 
-<!-- 
+🌐 **URL** : <https://benoit-marechal.github.io>
 
-# Todo 
+## Stack
 
-Set Dark Mode.
+HTML5 + CSS3 purs. Aucun framework, aucun JS, aucun build. Hébergement statique GitHub Pages.
 
-https://just-the-docs.github.io/just-the-docs/docs/index-test/#header-2 
+## Structure
 
--->
-
-
-# RUN / DEX 
-
-
-## DEPLOY
-
-### Deploy To Dev (Codespaces)
-
-
-In Codespaces terminal : 
-```shell
-cd /workspaces/benoit-marechal.github.io/
-docker run --volume="$PWD:/root/project:delegated" --publish 4000:4000 -ti mrseccubus/github-pages
+```
+.
+├── index.html              # one-pager complet
+├── style.css               # styles
+├── 404.html                # page d'erreur
+├── robots.txt
+├── favicon.ico
+├── scripts/
+│   └── build-pdf.sh        # régénère assets/fiche-formateur.pdf
+└── assets/
+    ├── benoit-marechal.jpg
+    └── fiche-formateur.pdf # généré (cf. ci-dessous)
 ```
 
-> A cause du pb de racc 1.6.0, je préfère utiliser un container pour lancer l'application.
+## Développement local
 
-From https://hub.docker.com/r/mrseccubus/github-pages
-
-Then : 
-https://benoit-marechal-effective-pancake-46j4vr4gvq35x95-4000.preview.app.github.dev/
-
-
-### Deploy To Production
-
-
-```shell
-git push origin main
+```bash
+python3 -m http.server 8000
+# Puis ouvrir http://localhost:8000
 ```
 
-Troubleshooting : See CICD Workflow in [Actions](https://github.com/benoit-marechal/benoit-marechal.github.io/actions) section.
+## Régénérer la Fiche Formateur PDF
 
+La source de vérité de la fiche est `../Formateur/Fiche-Formateur.md` (hors repo).
+À chaque modification de la fiche, lancer :
 
-Wait 10 min and see result : https://benoit-marechal.github.io
-
-
-### Updating dependecies
-
-Sometimes update dependecies of the *Gemfile* with this informations : 
-https://pages.github.com/versions/
-
-
-
-# DEV Environnement WITHOUT CodeSpace
-
-
-# DIT
-
-```shell
-cd ~/Projets/benoit-marechal.github.io
-jekyll new --force .
+```bash
+./scripts/build-pdf.sh           # régénère assets/fiche-formateur.pdf
+./scripts/build-pdf.sh --open    # idem + ouvre le PDF dans Preview
 ```
 
+Pipeline : `Markdown` → `HTML autonome` (pandoc) → `PDF` (Chrome headless).
 
-## Test excution 
+**Pré-requis** : `pandoc` (`brew install pandoc`) et Google Chrome installé dans `/Applications`.
 
-```shell
-bundle exec jekyll serve
-```
+⚠️ **Avant chaque commit qui touche le contenu**, penser à régénérer le PDF si la fiche source a changé.
 
+## Documentation projet
+
+- Spec design : [`docs/superpowers/specs/2026-05-07-site-formateur-design.md`](docs/superpowers/specs/2026-05-07-site-formateur-design.md)
+- Plan d'implémentation : [`docs/superpowers/plans/2026-05-07-site-formateur.md`](docs/superpowers/plans/2026-05-07-site-formateur.md)
+
+## Contact
+
+LinkedIn : <https://www.linkedin.com/in/benoit-marechal-lyon>
