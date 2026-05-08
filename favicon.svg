@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="8" fill="#14213d"/>
+  <text x="32" y="43"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="26"
+        font-weight="600"
+        fill="#f6f3ec"
+        text-anchor="middle"
+        letter-spacing="0.5">BM</text>
+</svg>
