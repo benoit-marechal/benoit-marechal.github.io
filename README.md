@@ -33,8 +33,7 @@ python3 -m http.server 8000
 
 ## Régénérer la Fiche Formateur PDF
 
-La source de vérité de la fiche est `../Formateur/Fiche-Formateur.md` (hors repo).
-À chaque modification de la fiche, lancer :
+La source de la fiche est `../Formateur/Fiche-Formateur.md`.
 
 ```bash
 ./scripts/build-pdf.sh           # régénère assets/fiche-formateur.pdf
@@ -42,15 +41,7 @@ La source de vérité de la fiche est `../Formateur/Fiche-Formateur.md` (hors re
 ```
 
 Pipeline : `Markdown` → `HTML autonome` (pandoc) → `PDF` (Chrome headless).
-
-**Pré-requis** : `pandoc` (`brew install pandoc`) et Google Chrome installé dans `/Applications`.
-
-⚠️ **Avant chaque commit qui touche le contenu**, penser à régénérer le PDF si la fiche source a changé.
-
-## Documentation projet
-
-- Spec design : [`docs/superpowers/specs/2026-05-07-site-formateur-design.md`](docs/superpowers/specs/2026-05-07-site-formateur-design.md)
-- Plan d'implémentation : [`docs/superpowers/plans/2026-05-07-site-formateur.md`](docs/superpowers/plans/2026-05-07-site-formateur.md)
+Pré-requis : `pandoc` (`brew install pandoc`) et Google Chrome.
 
 ## Contact
 
