@@ -1,48 +1,21 @@
-# Site formateur — Benoit MARECHAL
+# benoit-marechal.github.io
 
-Site personnel professionnel hébergé sur GitHub Pages.
+Mon site personnel. Formateur · 20 ans d'IT · Lyon.
 
-🌐 **URL** : <https://benoit-marechal.github.io>
+🌐 <https://benoit-marechal.github.io>
 
 ## Stack
 
-HTML5 + CSS3 purs. Aucun framework, aucun JS, aucun build. Hébergement statique GitHub Pages.
+HTML + CSS, hébergé sur GitHub Pages.
 
-## Structure
+La Fiche Formateur PDF (`assets/fiche-formateur.pdf`) est régénérée
+automatiquement à chaque commit par le hook `.githooks/pre-commit`,
+qui passe la source `../Formateur/Fiche-Formateur.md` dans
+`scripts/build-pdf.sh` (pandoc → HTML → Chrome headless → PDF).
 
-```
-.
-├── index.html              # one-pager complet
-├── style.css               # styles
-├── 404.html                # page d'erreur
-├── robots.txt
-├── favicon.ico
-├── scripts/
-│   └── build-pdf.sh        # régénère assets/fiche-formateur.pdf
-└── assets/
-    ├── benoit-marechal.jpg
-    └── fiche-formateur.pdf # généré (cf. ci-dessous)
-```
-
-## Développement local
+## Setup d'une nouvelle machine
 
 ```bash
-python3 -m http.server 8000
-# Puis ouvrir http://localhost:8000
+brew install pandoc
+git config core.hooksPath .githooks
 ```
-
-## Régénérer la Fiche Formateur PDF
-
-La source de la fiche est `../Formateur/Fiche-Formateur.md`.
-
-```bash
-./scripts/build-pdf.sh           # régénère assets/fiche-formateur.pdf
-./scripts/build-pdf.sh --open    # idem + ouvre le PDF dans Preview
-```
-
-Pipeline : `Markdown` → `HTML autonome` (pandoc) → `PDF` (Chrome headless).
-Pré-requis : `pandoc` (`brew install pandoc`) et Google Chrome.
-
-## Contact
-
-LinkedIn : <https://www.linkedin.com/in/benoit-marechal-lyon>

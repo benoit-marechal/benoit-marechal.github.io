@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# Régénère assets/fiche-formateur.pdf si la source Markdown
+# (../Formateur/Fiche-Formateur.md) est plus récente.
+# Activation : git config core.hooksPath .githooks
+
+set -e
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+SOURCE_MD="$REPO_ROOT/../Formateur/Fiche-Formateur.md"
+TARGET_PDF="$REPO_ROOT/assets/fiche-formateur.pdf"
+
+if [[ -f "$SOURCE_MD" && ( ! -f "$TARGET_PDF" || "$SOURCE_MD" -nt "$TARGET_PDF" ) ]]; then
+  echo "📄 Source Fiche modifiée → régénération du PDF…"
+  "$REPO_ROOT/scripts/build-pdf.sh" >/dev/null
+  git add "$TARGET_PDF"
+  echo "   ✓ assets/fiche-formateur.pdf mis à jour et ajouté au commit"
+fi
