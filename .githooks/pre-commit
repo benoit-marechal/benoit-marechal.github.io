@@ -1,17 +1,33 @@
 #!/usr/bin/env bash
-# Régénère assets/fiche-formateur.pdf si la source Markdown
-# (../Formateur/Fiche-Formateur.md) est plus récente.
 # Activation : git config core.hooksPath .githooks
-
-set -e
+set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
-SOURCE_MD="$REPO_ROOT/../Formateur/Fiche-Formateur.md"
-TARGET_PDF="$REPO_ROOT/assets/fiche-formateur.pdf"
+cd "${REPO_ROOT}"
+SOURCES=(assets/fiche-formateur.md assets/fiche-formateur-print.css scripts/build-pdf.sh)
+TARGET_PDF="assets/fiche-formateur.pdf"
+NEEDS_BUILD=false
 
-if [[ -f "$SOURCE_MD" && ( ! -f "$TARGET_PDF" || "$SOURCE_MD" -nt "$TARGET_PDF" ) ]]; then
-  echo "📄 Source Fiche modifiée → régénération du PDF…"
-  "$REPO_ROOT/scripts/build-pdf.sh" >/dev/null
-  git add "$TARGET_PDF"
-  echo "   ✓ assets/fiche-formateur.pdf mis à jour et ajouté au commit"
+# Le CSS et le générateur sont des sources au même titre que le Markdown.
+for source in "${SOURCES[@]}"; do
+  [[ -f "${source}" ]] || { printf 'Source de la fiche absente : %s\n' "${source}" >&2; exit 1; }
+  if [[ ! -f "${TARGET_PDF}" || "${source}" -nt "${TARGET_PDF}" ]]; then
+    NEEDS_BUILD=true
+  fi
+done
+if ! git diff --cached --quiet -- "${SOURCES[@]}"; then
+  NEEDS_BUILD=true
 fi
+[[ "${NEEDS_BUILD}" == true ]] || exit 0
+
+# Ne pas embarquer dans le PDF du contenu absent de l’index ou partiellement stagé.
+for source in "${SOURCES[@]}"; do
+  if ! git cat-file -e ":${source}" 2>/dev/null || ! git diff --quiet -- "${source}"; then
+    printf 'Fiche non générée : ajoute entièrement %s à l’index avant le commit.\n' "${source}" >&2
+    exit 1
+  fi
+done
+
+"${REPO_ROOT}/scripts/build-pdf.sh"
+git add -- "${TARGET_PDF}"
+printf 'Fiche publique régénérée et ajoutée au commit.\n'

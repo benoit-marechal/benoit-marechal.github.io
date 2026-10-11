@@ -1,0 +1,82 @@
+@page {
+  size: A4;
+  margin: 15mm 17mm;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #18283c;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10.4pt;
+  line-height: 1.38;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0 0 3mm;
+  color: #102b45;
+  font-size: 27pt;
+  line-height: 1.08;
+}
+
+h1 + p {
+  margin: 0 0 1.5mm;
+  color: #196b82;
+  font-size: 15pt;
+  line-height: 1.2;
+}
+
+h1 + p + p {
+  margin: 0 0 5mm;
+  color: #4a5b6b;
+  font-size: 10.5pt;
+}
+
+h2 {
+  margin: 5mm 0 2mm;
+  padding-bottom: 1mm;
+  border-bottom: 0.3mm solid #c5d8df;
+  color: #196b82;
+  font-size: 12pt;
+  line-height: 1.2;
+  break-after: avoid;
+}
+
+p {
+  margin: 0 0 2mm;
+}
+
+ul {
+  margin: 0;
+  padding-left: 4.5mm;
+}
+
+li {
+  margin: 0 0 2mm;
+  padding-left: 0.5mm;
+  break-inside: avoid;
+}
+
+li::marker {
+  color: #196b82;
+}
+
+strong {
+  color: #102b45;
+}
+
+a {
+  color: #196b82;
+  text-decoration: none;
+}

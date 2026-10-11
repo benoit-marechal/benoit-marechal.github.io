@@ -1,6 +1,6 @@
 # benoit-marechal.github.io
 
-Mon site personnel. Formateur · 20 ans d'IT · Lyon.
+Mon site personnel. Formateur DevOps, Linux et administration système · 18 ans d'expérience IT · Lyon. L'IA générative reste un domaine complémentaire.
 
 🌐 <https://benoit-marechal.github.io>
 
@@ -8,14 +8,16 @@ Mon site personnel. Formateur · 20 ans d'IT · Lyon.
 
 HTML + CSS, hébergé sur GitHub Pages.
 
-La Fiche Formateur PDF (`assets/fiche-formateur.pdf`) est régénérée
-automatiquement à chaque commit par le hook `.githooks/pre-commit`,
-qui passe la source `../Formateur/Fiche-Formateur.md` dans
-`scripts/build-pdf.sh` (pandoc → HTML → Chrome headless → PDF).
+La fiche publique est maintenue dans `assets/fiche-formateur.md`, avec son style d'impression `assets/fiche-formateur-print.css`. Le PDF téléchargeable (`assets/fiche-formateur.pdf`) est généré par `scripts/build-pdf.sh` (pandoc → HTML → Chrome headless → PDF). Le hook `.githooks/pre-commit` vérifie sa mise à jour avant commit.
+
+Le positionnement s'appuie sur le CV une page du projet `mes-formations`. Les sources publiques du PDF sont conservées ici pour que sa génération ne dépende pas d'un dossier personnel externe.
 
 ## Setup d'une nouvelle machine
 
+Google Chrome doit être installé dans `/Applications`. Poppler fournit `pdfinfo`, utilisé pour vérifier que la fiche tient sur une page avant de remplacer le PDF.
+
 ```bash
-brew install pandoc
+brew install pandoc poppler
 git config core.hooksPath .githooks
+./scripts/build-pdf.sh
 ```

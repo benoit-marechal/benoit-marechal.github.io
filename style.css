@@ -338,7 +338,7 @@ em { font-style: italic; color: var(--color-text-soft); }
 .hero-bio {
   font-size: 16px;
   color: var(--color-text-soft);
-  margin-bottom: var(--space-4);
+  margin-bottom: var(--space-2);
   max-width: 52ch;
   line-height: 1.7;
 }
@@ -347,6 +347,12 @@ em { font-style: italic; color: var(--color-text-soft); }
   display: flex;
   gap: var(--space-2);
   flex-wrap: wrap;
+}
+
+.hero-complement {
+  font-size: 14px;
+  color: var(--color-text-soft);
+  margin-bottom: var(--space-4);
 }
 
 .hero-photo-frame {
@@ -446,6 +452,17 @@ em { font-style: italic; color: var(--color-text-soft); }
   font-size: 13px;
   color: var(--color-text-muted);
 }
+
+.complement {
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-left: 3px solid var(--color-gold);
+  background: var(--color-bg);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.complement h3 { margin-bottom: var(--space-2); }
+.complement p:last-child { color: var(--color-text-soft); max-width: 80ch; }
 
 /* ============================================================
    Timeline (Parcours)
@@ -882,6 +899,8 @@ a:focus-visible, .btn:focus-visible {
 
   .cards { grid-template-columns: 1fr; }
 
+  .complement { padding: var(--space-3); }
+
   .stack-row {
     grid-template-columns: 1fr;
     gap: 4px;
@@ -889,7 +908,7 @@ a:focus-visible, .btn:focus-visible {
   }
 
   .modalites-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .mod-card-tarif {
@@ -916,4 +935,8 @@ a:focus-visible, .btn:focus-visible {
     width: auto;
     margin-bottom: 2px;
   }
+}
+
+@media (max-width: 480px) {
+  .modalites-grid { grid-template-columns: 1fr; }
 }
