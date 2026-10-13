@@ -31,7 +31,7 @@ Des formations ancrées dans la pratique : comprendre, manipuler et appliquer le
 
 - **Formats de 2 à 5 jours**, avec démonstrations et exercices pratiques ; contenu adapté au niveau et aux objectifs.
 - **Inter ou intra-entreprise**, à Lyon ou à distance partout en France.
-- **Sessions planifiées**, calendrier à convenir ; tarifs sur demande.
+- **Sessions planifiées**, calendrier à convenir.
 
 ## Contact
 
