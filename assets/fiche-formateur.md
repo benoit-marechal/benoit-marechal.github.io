@@ -10,16 +10,20 @@ lang: fr
 
 Des formations ancrées dans la pratique pour relier infrastructures cloud, exploitation du SI et usages de l'IA générative.
 
+Modules confiés, en préparation : Ynov M1 (IaaS/OpenStack, 28 h) et ESGI M1 (AWS, 21 h).
+
 ## Deux domaines prioritaires
 
 - **Cloud IaaS & AWS** : calcul, réseau, stockage, gestion des accès, déploiement d'infrastructures, coûts et exploitation.
 - **IA générative** : usages et limites, consignes, évaluation des réponses, assistants documentaires et principes du RAG.
 
-## Axe de spécialisation en cours
+## Axe de spécialisation en préparation
 
-**Amazon Bedrock** : spécialisation en cours pour relier AWS, modèles génératifs et assistants documentaires/RAG. Ce travail ne constitue pas encore une formation Bedrock disponible.
+**Amazon Bedrock** : prochaine orientation vers les applications d'IA générative sur AWS avec Bedrock et le RAG.
 
 ## Socle opérationnel
+
+Modules ciblés : administration et diagnostic Linux/RHEL, conteneurisation avec Docker.
 
 - **Docker** : conteneurs, déploiement d'applications et intégration dans le SI.
 - **Linux / RHEL** : administration, utilisateurs, droits, services et diagnostic.

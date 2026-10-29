@@ -1,6 +1,6 @@
 # benoit-marechal.github.io
 
-Mon site personnel. Formateur Cloud AWS et IA générative · 18 ans d'expérience IT · Lyon. Deux piliers : Cloud IaaS/AWS et usages de l'IA générative, avec un socle Docker et Linux/RHEL. Amazon Bedrock est présenté comme un axe de spécialisation en cours.
+Mon site personnel. Formateur Cloud AWS et IA générative · 18 ans d'expérience IT · Lyon. Deux piliers : Cloud IaaS/AWS et usages de l'IA générative, avec un socle Docker et Linux/RHEL. Amazon Bedrock est présenté comme un axe de spécialisation en préparation.
 
 🌐 <https://benoit-marechal.github.io>
 
