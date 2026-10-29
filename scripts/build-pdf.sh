@@ -40,7 +40,7 @@ pandoc "${SOURCE_MD}" \
   --standalone \
   --embed-resources \
   --css="${SOURCE_CSS}" \
-  --metadata pagetitle="Benoit Maréchal - Formateur DevOps, Linux & administration système" \
+  --metadata pagetitle="Benoit Maréchal - Formateur Cloud AWS & IA générative" \
   --output "${TMP_DIR}/fiche.html"
 
 # Un profil temporaire évite de transmettre la commande à une session Chrome ouverte.

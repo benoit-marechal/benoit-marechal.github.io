@@ -4,32 +4,35 @@ lang: fr
 
 # Benoit Maréchal
 
-**Formateur DevOps, Linux & administration système**
+**Formateur Cloud AWS & IA générative**
 
 18 ans d'expérience IT · Lyon
 
-Des formations ancrées dans la pratique : comprendre, manipuler et appliquer les méthodes de l'administration système et de l'intégration SI.
+Des formations ancrées dans la pratique pour relier infrastructures cloud, exploitation du SI et usages de l'IA générative.
 
 ## Deux domaines prioritaires
 
-- **Linux / RHEL** : bases du système, administration, droits et services, durcissement et gestion des accès.
-- **DevOps & intégration SI** : Docker, GitLab CI/CD, déploiement et intégration dans le SI ; fondamentaux SQL et Python.
+- **Cloud IaaS & AWS** : calcul, réseau, stockage, gestion des accès, déploiement d'infrastructures, coûts et exploitation.
+- **IA générative** : usages et limites, consignes, évaluation des réponses, assistants documentaires et principes du RAG.
 
-## IA en complément
+## Axe de spécialisation en cours
 
-- **Comprendre les usages et leurs limites** : cadrer un besoin, évaluer les résultats et définir les règles d'usage.
-- **Découvrir le RAG et les bases vectorielles** : principes, cas d'usage et démonstrations.
-- **Initiation à n8n** : automatisations simples et gouvernance des usages.
+**Amazon Bedrock** : spécialisation en cours pour relier AWS, modèles génératifs et assistants documentaires/RAG. Ce travail ne constitue pas encore une formation Bedrock disponible.
+
+## Socle opérationnel
+
+- **Docker** : conteneurs, déploiement d'applications et intégration dans le SI.
+- **Linux / RHEL** : administration, utilisateurs, droits, services et diagnostic.
 
 ## Expérience de terrain
 
-- **Métropole de Lyon · 2019 à aujourd'hui** - Ingénieur DevOps & Intégrateur. RHEL, Docker, Oracle et GitLab CI ; déploiements, suivi opérationnel, ateliers et documentation.
-- **COREXPERT · 2017-2019** - Consultant Architecte Cloud AWS DevOps. Migrations et industrialisation ; formations internes DevOps et intégration continue.
+- **Métropole de Lyon · 2019 à aujourd'hui** - Ingénieur DevOps & Intégrateur. RHEL, Docker, Oracle et GitLab CI. Déploiements, suivi opérationnel, ateliers et documentation.
+- **COREXPERT · 2017-2019** - Consultant Architecte Cloud AWS DevOps. Migrations et industrialisation. Formations internes DevOps et intégration continue.
 - **Adthink · 2013-2017** - Responsable produit technique. Pratiques Scrum et DevOps.
 
 ## Modalités d'intervention
 
-- **Formats de 2 à 5 jours**, avec démonstrations et exercices pratiques ; contenu adapté au niveau et aux objectifs.
+- **Formats de 2 à 5 jours**, avec démonstrations et exercices pratiques, adaptés au niveau et aux objectifs.
 - **Inter ou intra-entreprise**, à Lyon ou à distance partout en France.
 - **Sessions planifiées**, calendrier à convenir.
 
