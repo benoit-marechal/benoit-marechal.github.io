@@ -6,16 +6,16 @@ lang: fr
 
 **Formateur Cloud AWS & IA générative**
 
-18 ans d'expérience IT · Lyon
+Formateur indépendant depuis septembre 2026 · 18 ans d'expérience IT · Lyon
 
-Des formations ancrées dans la pratique pour relier infrastructures cloud, exploitation du SI et usages de l'IA générative.
+Je conçois des formations ancrées dans la pratique pour relier infrastructures cloud, exploitation du SI et usages de l'IA générative.
 
 Modules confiés, en préparation : Ynov M1 (IaaS/OpenStack, 28 h) et ESGI M1 (AWS, 21 h).
 
 ## Deux domaines prioritaires
 
 - **Cloud IaaS & AWS** : calcul, réseau, stockage, gestion des accès, déploiement d'infrastructures, coûts et exploitation.
-- **IA générative** : usages et limites, consignes, évaluation des réponses, assistants documentaires et principes du RAG.
+- **Usages de l'IA générative** : usages et limites, consignes, évaluation des réponses, assistants documentaires et principes du RAG.
 
 ## Axe de spécialisation en préparation
 
